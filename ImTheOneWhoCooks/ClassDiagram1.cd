@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ImTheOneWhoCooks.Models.KitchenObject">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\KitchenObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Products.Product">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAQBAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Products\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.Recipe">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Models\Recipes\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.FriedRecipe">
+    <Position X="3.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Recipes\FriedRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.BoiledRecipe">
+    <Position X="5.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Recipes\BoiledRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.DrinkableRecipe">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Recipes\DrinkableRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.RawRecipe">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAABAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Recipes\RawRecipe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Recipes.GrilledRecipe">
+    <Position X="7.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Recipes\BarbequeRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.Products.EatableProduct">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\Products\EatableProduct.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ImTheOneWhoCooks.Contracts.IProduct">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Contracts\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.IRecipe">
+    <Position X="15.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Contracts\IRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.IKitchenObject">
+    <Position X="14" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IKitchenObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.IEatableRecipe">
+    <Position X="15.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IEatableRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.ICaloriable">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IEatableObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ImTheOneWhoCooks.Enums.UnitOfMeasurement" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Enums\UnitOfMeasurement.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ImTheOneWhoCooks.Enums.ProductType" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQACAAAAAAAQAAAAAAFAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

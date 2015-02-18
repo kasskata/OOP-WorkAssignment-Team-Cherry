@@ -1,0 +1,42 @@
+----Store House----
+-Add new product 
+Add product(name; quantity measurementUnit; type; price);
+
+-List all products
+List storehouse
+
+-List all products by type
+List storehouse type=<type>
+
+-List a product by name
+List storehouse name=<name>
+-------------------
+----Cook Book------
+-Add new recipe
+Add recipe(name; type; [preparingTime]; products:<product name> <measurement unit>[,...]);
+
+-List all recipes
+List cookbook
+
+-List all recipes by type
+List cookbook type=<type>
+
+-List recipe by name
+List cookbook name=<name>
+
+-Delete recipe by name
+List cookbook name=<name>
+-------------------
+----Executable commands----
+-Cook recipe
+cook recipe <name>
+
+-Cook recipeName with extras
+cook <recipeName>(<extra>[,...])
+
+-get all cooked recipes
+report
+
+-give me amount of a recipe I can make
+howMuch <recipeName>
+---------------------------

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ImTheOneWhoCooks.Contracts;
 
-namespace ImTheOneWhoCooks
+namespace ImTheOneWhoCooks.Contracts
 {
     public interface IStoreHouse
     {
+        IList<IProduct> Products { get; set; }
     }
 }

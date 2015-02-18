@@ -75,19 +75,20 @@
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ImTheOneWhoCooks.Inventory">
-    <Position X="8.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ImTheOneWhoCooks.CookBook">
+  <Class Name="ImTheOneWhoCooks.Models.CookBook">
     <Position X="6.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CookBook.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CookBook.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="ImTheOneWhoCooks.Models.StoreHouse">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Models\StoreHouse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="ImTheOneWhoCooks.Contracts.IProduct">
     <Position X="12.5" Y="2.75" Width="1.5" />
@@ -122,6 +123,20 @@
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\IEatableObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.IStoreHouse">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Contracts\IStoreHouse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.ICookBook">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICookBook.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ImTheOneWhoCooks.Enums.UnitOfMeasurement" Collapsed="true">

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using ImTheOneWhoCooks.Contracts;
 
-namespace ImTheOneWhoCooks
+namespace ImTheOneWhoCooks.Contracts
 {
-    public class CookBook
+    public interface ICookBook
     {
-        List<IRecipe> recipes = new List<IRecipe>(); 
+        IList<IRecipe> Recipes { get; set; } 
     }
 }

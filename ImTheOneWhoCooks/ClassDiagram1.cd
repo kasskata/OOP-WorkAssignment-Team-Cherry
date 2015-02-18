@@ -71,7 +71,7 @@
   <Class Name="ImTheOneWhoCooks.Engine">
     <Position X="7.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAAI=</HashCode>
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -81,6 +81,7 @@
       <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\CookBook.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.StoreHouse">
     <Position X="8.75" Y="2.75" Width="1.5" />

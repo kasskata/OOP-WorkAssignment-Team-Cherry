@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ImTheOneWhoCooks
 {
-    class EntryPoint
+    static class Messages
     {
-        static void Main(string[] args)
-        {
-            Engine engine = new Engine();
-            engine.Run();
-        }
+        public const string InvalidCommand = "Invalid Command";
     }
 }

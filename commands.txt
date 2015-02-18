@@ -11,6 +11,7 @@ List storehouse type=<type>
 -List a product by name
 List storehouse name=<name>
 -------------------
+
 ----Cook Book------
 -Add new recipe
 Add recipe(name; type; [preparingTime]; products:<product name> <measurement unit>[,...]);
@@ -29,14 +30,14 @@ List cookbook name=<name>
 -------------------
 ----Executable commands----
 -Cook recipe
-cook recipe <name>
+Cook recipe <name>
 
 -Cook recipeName with extras
-cook <recipeName>(<extra>[,...])
+Cook <recipeName>(<extra>[,...])
 
 -get all cooked recipes
-report
+Report
 
 -give me amount of a recipe I can make
-howMuch <recipeName>
+HowMuch <recipeName>
 ---------------------------

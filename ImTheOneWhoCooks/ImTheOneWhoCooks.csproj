@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CookBook.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Inventory.cs" />
     <Compile Include="Models\Recipes\BakedRecipe.cs" />
     <Compile Include="Models\Recipes\BarbequeRecipe.cs" />
     <Compile Include="Models\Recipes\BoiledRecipe.cs" />

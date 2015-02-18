@@ -1,6 +1,6 @@
 ----Store House----
 -Add new product 
-Add product(name; quantity measurementUnit; type; price);
+Add product(<name>; <quantity measurementUnit>; <type>; <price>);
 
 -List all products
 List storehouse
@@ -14,7 +14,7 @@ List storehouse name=<name>
 
 ----Cook Book------
 -Add new recipe
-Add recipe(name; type; [preparingTime]; products:<product name> <measurement unit>[,...]);
+Add recipe(<name>; <type>; [<preparingTime>]; products:<product name> <measurement unit>[,...]);
 
 -List all recipes
 List cookbook

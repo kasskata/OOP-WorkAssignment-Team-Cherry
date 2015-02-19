@@ -47,6 +47,9 @@
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.RawRecipe">
     <Position X="5.75" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAABAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Recipes\RawRecipe.cs</FileName>
@@ -61,7 +64,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Products.EatableProduct">
-    <Position X="0.5" Y="6.75" Width="1.5" />
+    <Position X="0.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Models\Products\EatableProduct.cs</FileName>
@@ -88,6 +91,22 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
       <FileName>Models\StoreHouse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.RecipeFactory">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAIA=</HashCode>
+      <FileName>RecipeFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ImTheOneWhoCooks.ProductFactory">
+    <Position X="11" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -138,6 +157,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\ICookBook.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ImTheOneWhoCooks.Contracts.Factories.IRecipeFactory">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAIA=</HashCode>
+      <FileName>Contracts\Factories\IRicipeFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ImTheOneWhoCooks.Enums.UnitOfMeasurement" Collapsed="true">

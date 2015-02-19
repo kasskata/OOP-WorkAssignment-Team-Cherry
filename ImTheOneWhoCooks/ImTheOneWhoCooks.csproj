@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Factories\IProductFactory.cs" />
+    <Compile Include="Contracts\Factories\IRicipeFactory.cs" />
     <Compile Include="Messages.cs" />
     <Compile Include="Models\CookBook.cs" />
     <Compile Include="Engine.cs" />
@@ -64,10 +66,12 @@
     <Compile Include="Models\KitchenObject.cs" />
     <Compile Include="Models\Products\Product.cs" />
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="ProductFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enums\UnitOfMeasurement.cs" />
     <Compile Include="Models\Recipes\Recipe.cs" />
     <Compile Include="Models\StoreHouse.cs" />
+    <Compile Include="RecipeFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

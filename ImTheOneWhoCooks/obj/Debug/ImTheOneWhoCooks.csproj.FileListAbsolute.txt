@@ -3,3 +3,8 @@ c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWh
 c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
 c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
 c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.exe
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.pdb
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache

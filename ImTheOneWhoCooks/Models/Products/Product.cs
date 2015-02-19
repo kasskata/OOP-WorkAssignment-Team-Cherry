@@ -14,6 +14,14 @@ namespace ImTheOneWhoCooks.Models.Products
         private UnitOfMeasurement unitOfMeasurement;
         private ProductType productType;
 
+        public Product(string name, decimal price, double quantity, UnitOfMeasurement unitOfMeasurement, ProductType productType) 
+            : base(name, price)
+        {
+            this.Quantity = quantity;
+            this.UnitOfMeasurement = unitOfMeasurement;
+            this.ProductType = productType;
+        }
+
         public double Quantity
         {
             get { return quantity; }

@@ -10,9 +10,16 @@ namespace ImTheOneWhoCooks.Models.Recipes
     {
         private int preparingTime;
 
+        public RawRecipe(string name, decimal price, int preparingTime) 
+            : base(name, price)
+        {
+            this.PreparingTime = preparingTime;
+        }
+
         public int PreparingTime
         {
             get { return preparingTime; }
+            private set { preparingTime = value; }
         }
 
         public override string Cook()

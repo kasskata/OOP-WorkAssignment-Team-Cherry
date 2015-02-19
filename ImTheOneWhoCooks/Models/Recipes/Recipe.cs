@@ -9,7 +9,13 @@ namespace ImTheOneWhoCooks.Models.Recipes
 {
     public abstract class Recipe : KitchenObject, IRecipe
     {
-        private IList<IProduct> products;
+        private readonly IList<IProduct> products;
+
+        protected Recipe(string name, decimal price) 
+            : base(name, price)
+        {
+            this.products = new List<IProduct>();
+        }
 
         public IList<IProduct> Products
         {

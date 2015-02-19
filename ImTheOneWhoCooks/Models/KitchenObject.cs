@@ -7,6 +7,12 @@ namespace ImTheOneWhoCooks.Models
         private string name;
         private decimal price;
 
+        protected KitchenObject(string name, decimal price)
+        {
+            this.Name = name;
+            this.Price = price;
+        }
+
         public string Name
         {
             get { return name; }

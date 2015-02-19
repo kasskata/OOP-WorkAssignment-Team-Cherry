@@ -7,6 +7,11 @@ namespace ImTheOneWhoCooks.Models.Recipes
 {
     public class GrilledRecipe : RawRecipe
     {
+        public GrilledRecipe(string name, decimal price, int preparingTime) 
+            : base(name, price, preparingTime)
+        {
+        }
+
         public override string Cook()
         {
             throw new NotImplementedException();

@@ -86,7 +86,7 @@ namespace ImTheOneWhoCooks
                     result = ParseAddProductCommand(argumentsAsString);
                     break;
                 case "recipe":
-
+                    result = ParseAddRecipeCommand(argumentsAsString);
                     break;
                 default:
                     throw new InvalidOperationException(Messages.InvalidCommand);
@@ -107,6 +107,11 @@ namespace ImTheOneWhoCooks
                 .ToArray();
 
             return ExecuteAddProductCommand(arguments);
+        }
+
+        private string ParseAddRecipeCommand(string argumentsAsString)
+        {
+            throw new NotImplementedException();
         }
 
         private string ExecuteAddProductCommand(string[] arguments)

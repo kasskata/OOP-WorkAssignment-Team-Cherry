@@ -7,13 +7,13 @@ namespace ImTheOneWhoCooks
 {
     public class ProductFactory :IProductFactory
     {
-        public IProduct CreatProduct(string name, decimal price, double quantity, UnitOfMeasurement unitOfMeasurement,
+        public IProduct CreateProduct(string name, decimal price, double quantity, UnitOfMeasurement unitOfMeasurement,
             ProductType productType)
         {
             return new Product(name, price, quantity, unitOfMeasurement, productType);
         }
 
-        public IProduct CreatEatableProduct(string name, decimal price, double quantity, UnitOfMeasurement unitOfMeasurement,
+        public IProduct CreateEatableProduct(string name, decimal price, double quantity, UnitOfMeasurement unitOfMeasurement,
             ProductType productType, int calories)
         {
             return new EatableProduct(name, price, quantity, unitOfMeasurement, productType, calories);

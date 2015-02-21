@@ -1,12 +1,5 @@
-c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.exe
-c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.pdb
-c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
-c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
-c:\users\reath\documents\visual studio 2013\Projects\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.exe
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.pdb
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
-C:\Users\Reath\Source\Repos\Team-Cherry\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
-C:\Users\Reath\Source\Repos\Team-Cherry\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
+D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.exe
+D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.pdb
+D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
+D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
+D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb

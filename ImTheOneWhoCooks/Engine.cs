@@ -2,14 +2,20 @@
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using ImTheOneWhoCooks.Contracts;
 using ImTheOneWhoCooks.Enums;
+using ImTheOneWhoCooks.Models;
+using ImTheOneWhoCooks.Models.Products;
 
 namespace ImTheOneWhoCooks
 {
     public class Engine
     {
-        private StringBuilder output;
-        private ProductFactory factory = new ProductFactory();
+        private readonly StringBuilder output;
+        private readonly ProductFactory factory = new ProductFactory();
+        private readonly CookBook cookBook = new CookBook();
+        private readonly StoreHouse store = new StoreHouse();
+
         public Engine()
         {
             output = new StringBuilder();
@@ -116,30 +122,44 @@ namespace ImTheOneWhoCooks
 
         private string ExecuteAddProductCommand(string[] arguments)
         {
-            var name = arguments[1];
-            var quantity =  double.Parse(arguments[2]);
-            var unitOfMeasurementAsString = arguments[3];
-            var typeAsString = arguments[4];
-            var price = decimal.Parse(arguments[5]);
+            var result = string.Empty;
 
-            UnitOfMeasurement units;
-            UnitOfMeasurement.TryParse(unitOfMeasurementAsString, out units);
-
-            ProductType type;
-            ProductType.TryParse(typeAsString, out type);
-
-            if (arguments[6] != null)
+            try
             {
-                var calories = int.Parse(arguments[6]);
+                var name = arguments[1];
+                var quantity = double.Parse(arguments[2]);
+                var unitOfMeasurementAsString = arguments[3];
+                var typeAsString = arguments[4];
+                var price = decimal.Parse(arguments[5]);
 
-                factory.CreateEatableProduct(name, price, quantity, units, type, calories);
+                IProduct product;
+
+                UnitOfMeasurement units;
+                Enum.TryParse(unitOfMeasurementAsString, out units);
+
+                ProductType type;
+                Enum.TryParse(typeAsString, out type);
+
+                if (arguments[6] != null)
+                {
+                    var calories = int.Parse(arguments[6]);
+
+                    product = factory.CreateEatableProduct(name, price, quantity, units, type, calories);
+                }
+                else
+                {
+                    product = factory.CreateProduct(name, price, quantity, units, type);
+                }
+
+                store.IsDuplicate(product);
+
+                return result = Messages.SuccessAddProduct;
             }
-            else
+            catch (Exception)
             {
-                factory.CreateProduct(name, price, quantity, units, type);
+                result = Messages.InvalidProductCommand;
+                return result;
             }
-            //return String.Join(", ", arguments);
-
         }
 
         private void getEverythingAfterFirstWord(string input, out string firstWord, out string textAfterFirstWord)

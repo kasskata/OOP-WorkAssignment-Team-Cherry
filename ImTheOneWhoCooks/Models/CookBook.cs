@@ -10,10 +10,17 @@ namespace ImTheOneWhoCooks.Models
     {
         private IList<IRecipe> recipes;
 
+        public CookBook()
+        {
+            this.Recipes = new List<IRecipe>();
+        }
+
         public IList<IRecipe> Recipes
         {
             get { return recipes; }
             set { recipes = value; }
         }
+
+        
     }
 }

@@ -9,5 +9,9 @@ namespace ImTheOneWhoCooks
     static class Messages
     {
         public const string InvalidCommand = "Invalid Command";
+        public const string InvalidProductCommand = "Cannot Create Product";
+
+        public const string SuccessAddProduct = "Adding product successfully";
+
     }
 }

@@ -41,3 +41,5 @@ Report
 -give me amount of a recipe I can make
 HowMuch <recipeName>
 ---------------------------
+
+Add product(tomato; 1200 g; plants; 12.5; 125)

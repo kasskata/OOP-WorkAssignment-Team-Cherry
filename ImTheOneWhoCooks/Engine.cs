@@ -12,13 +12,16 @@ namespace ImTheOneWhoCooks
     public class Engine
     {
         private readonly StringBuilder output;
-        private readonly ProductFactory factory = new ProductFactory();
-        private readonly CookBook cookBook = new CookBook();
-        private readonly StoreHouse store = new StoreHouse();
+        private readonly ProductFactory factory;
+        private readonly CookBook cookBook;
+        private readonly StoreHouse store;
 
         public Engine()
         {
-            output = new StringBuilder();
+            this.output = new StringBuilder();
+            this.factory = new ProductFactory();
+            this.store = new StoreHouse();
+            this.cookBook = new CookBook();
         }
 
         public void Run()
@@ -140,10 +143,10 @@ namespace ImTheOneWhoCooks
                 ProductType type;
                 Enum.TryParse(typeAsString, out type);
 
-                if (arguments[6] != null)
+                const int MaxArgumentCount = 7;
+                if (arguments.Length == MaxArgumentCount)
                 {
                     var calories = int.Parse(arguments[6]);
-
                     product = factory.CreateEatableProduct(name, price, quantity, units, type, calories);
                 }
                 else
@@ -171,5 +174,6 @@ namespace ImTheOneWhoCooks
             var endOfCommandIndex = match.Index + match.Length;
             textAfterFirstWord = input.Substring(endOfCommandIndex).Trim();
         }
+
     }
 }

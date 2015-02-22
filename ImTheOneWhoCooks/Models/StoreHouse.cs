@@ -38,10 +38,10 @@ namespace ImTheOneWhoCooks.Models
 
             if (duplicate != null)
             {
-                duplicate.Price = (duplicate.Price + product.Price) / 2;
+                duplicate.Price = 
+                    (duplicate.Price * (decimal) duplicate.Quantity + product.Price * (decimal) product.Quantity) /
+                        (decimal)( duplicate.Quantity + product.Quantity);
                 duplicate.Quantity = duplicate.Quantity + product.Quantity;
-                this.Remove(duplicate);
-                this.Add(product);
             }
             else
             {

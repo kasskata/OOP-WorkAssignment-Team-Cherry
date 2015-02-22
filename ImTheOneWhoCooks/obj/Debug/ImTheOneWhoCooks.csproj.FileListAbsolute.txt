@@ -3,3 +3,5 @@ D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\bin\Deb
 D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
 D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
 D:\SoftwareUniversity\GiTProjects\Team-Cherry.git\trunk\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
+D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb

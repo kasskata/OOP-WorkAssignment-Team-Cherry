@@ -1,12 +1,19 @@
 ----Store House----
 -Add new product 
 Add product(<name>; <quantity measurementUnit>; <type>; <price>; <calories>);
+Add product(tomato; 1340.23 gr; Plants; 12.59; 123)
+Add product(tishues; 20 prices; Other ; 0.59)
+Add product(krastavici; 10000 gr; Plants; 13.89; 340)
+Add product(kiselo mlqko; 1000 ml;  Dairy; 100.0000002; 54320)
+Add product(Bob; 132.132 gr; Beans; 1.123)
+Add product(Tomato; 2300.27 gr; Plants; 100.12; 1252)
 
 -List all products
 List storehouse
 
 -List all products by type
 List storehouse type=<type>
+List storehouse type = tomato
 
 -List a product by name
 List storehouse name=<name>
@@ -41,5 +48,3 @@ Report
 -give me amount of a recipe I can make
 HowMuch <recipeName>
 ---------------------------
-
-Add product(tomato; 1200 g; plants; 12.5; 125)

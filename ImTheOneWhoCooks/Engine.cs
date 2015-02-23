@@ -65,16 +65,12 @@ namespace ImTheOneWhoCooks
                     result = ParseAddCommand(argumentsAsString);
                     break;
                 case "List":
-
                     break;
                 case "Cook":
-
                     break;
                 case "Report":
-
                     break;
                 case "HowMuch":
-
                     break;
                 default:
                     throw new InvalidOperationException(Messages.InvalidCommand);

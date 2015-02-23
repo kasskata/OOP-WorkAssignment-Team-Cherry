@@ -184,7 +184,7 @@ namespace ImTheOneWhoCooks
                 default:
                     throw new InvalidOperationException(Messages.InvalidCommand);
             }
-
+            cookBook.AddRecipe(recipe);
 
             return Messages.SuccessAddRecipe;
         }

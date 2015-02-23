@@ -49,8 +49,7 @@
     <Compile Include="Engine.cs" />
     <Compile Include="Contracts\ICookBook.cs" />
     <Compile Include="Contracts\IStoreHouse.cs" />
-    <Compile Include="Models\Recipes\BakedRecipe.cs" />
-    <Compile Include="Models\Recipes\BarbequeRecipe.cs" />
+    <Compile Include="Models\Recipes\GrilledRecipe.cs" />
     <Compile Include="Models\Recipes\BoiledRecipe.cs" />
     <Compile Include="Contracts\IKitchenObject.cs" />
     <Compile Include="Contracts\IProduct.cs" />

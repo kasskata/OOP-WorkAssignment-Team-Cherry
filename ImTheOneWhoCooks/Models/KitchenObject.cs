@@ -19,7 +19,7 @@ namespace ImTheOneWhoCooks.Models
             set { name = value; }
         }
 
-        public virtual decimal Price
+        public decimal Price
         {
             get { return price; }
             set { price = value; }

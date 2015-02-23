@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ImTheOneWhoCooks.Models.KitchenObject">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAQAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\KitchenObject.cs</FileName>
@@ -11,42 +11,42 @@
   <Class Name="ImTheOneWhoCooks.Models.Products.Product">
     <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAEAAAQBAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <HashCode>ABAEAAAQBAAAAAAEAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Models\Products\Product.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.Recipe">
-    <Position X="4.25" Y="3.75" Width="1.5" />
+    <Position X="6.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
       <FileName>Models\Recipes\Recipe.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.FriedRecipe">
-    <Position X="3.75" Y="9" Width="1.5" />
+    <Position X="5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Recipes\FriedRecipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.BoiledRecipe">
-    <Position X="5.5" Y="9" Width="1.5" />
+    <Position X="7.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Recipes\BoiledRecipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.DrinkableRecipe">
-    <Position X="3.25" Y="6.5" Width="1.5" />
+    <Position X="2.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Recipes\DrinkableRecipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.RawRecipe">
-    <Position X="5.75" Y="6.5" Width="1.5" />
+    <Position X="7.25" Y="7" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -57,124 +57,124 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Recipes.GrilledRecipe">
-    <Position X="7.25" Y="9" Width="1.5" />
+    <Position X="9.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Recipes\BarbequeRecipe.cs</FileName>
+      <FileName>Models\Recipes\GrilledRecipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.Products.EatableProduct">
-    <Position X="0.5" Y="7.25" Width="1.5" />
+    <Position X="0.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>IAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Models\Products\EatableProduct.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ImTheOneWhoCooks.Engine">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="ImTheOneWhoCooks.Engine" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AJAAgAAAAAAAACAAAEAEgAAECAQACAIBgAAAAAAAAAI=</HashCode>
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ImTheOneWhoCooks.Models.CookBook">
-    <Position X="6.75" Y="4.25" Width="1.5" />
+  <Class Name="ImTheOneWhoCooks.Models.CookBook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\CookBook.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="ImTheOneWhoCooks.Models.StoreHouse">
-    <Position X="8.75" Y="4.25" Width="1.5" />
+  <Class Name="ImTheOneWhoCooks.Models.StoreHouse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAABAAAAAY=</HashCode>
       <FileName>Models\StoreHouse.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="ImTheOneWhoCooks.RecipeFactory">
-    <Position X="9" Y="6.75" Width="1.5" />
+  <Class Name="ImTheOneWhoCooks.RecipeFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAACAAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAIA=</HashCode>
       <FileName>RecipeFactory.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="ImTheOneWhoCooks.ProductFactory">
-    <Position X="11" Y="6.75" Width="1.5" />
+  <Class Name="ImTheOneWhoCooks.ProductFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ProductFactory.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="ImTheOneWhoCooks.Contracts.IProduct">
-    <Position X="12.5" Y="2.75" Width="1.5" />
+    <Position X="10.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Contracts\IProduct.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ImTheOneWhoCooks.Contracts.IRecipe">
-    <Position X="15.25" Y="2.75" Width="1.5" />
+    <Position X="12.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Contracts\IRecipe.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ImTheOneWhoCooks.Contracts.IKitchenObject">
-    <Position X="14" Y="0.75" Width="1.5" />
+    <Position X="11.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\IKitchenObject.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ImTheOneWhoCooks.Contracts.IEatableRecipe">
-    <Position X="15.5" Y="5" Width="1.5" />
+    <Position X="12.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\IEatableRecipe.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ImTheOneWhoCooks.Contracts.ICaloriable">
-    <Position X="12.25" Y="0.75" Width="1.5" />
+  <Interface Name="ImTheOneWhoCooks.Contracts.ICaloriable" Collapsed="true">
+    <Position X="15" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\IEatableObject.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ImTheOneWhoCooks.Contracts.IStoreHouse">
-    <Position X="10.5" Y="2" Width="1.5" />
+  <Interface Name="ImTheOneWhoCooks.Contracts.IStoreHouse" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Contracts\IStoreHouse.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ImTheOneWhoCooks.Contracts.ICookBook">
-    <Position X="10.5" Y="0.75" Width="1.5" />
+  <Interface Name="ImTheOneWhoCooks.Contracts.ICookBook" Collapsed="true">
+    <Position X="16.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\ICookBook.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="ImTheOneWhoCooks.Contracts.Factories.IRecipeFactory">
-    <Position X="10.75" Y="3.5" Width="1.5" />
+  <Interface Name="ImTheOneWhoCooks.Contracts.Factories.IRecipeFactory" Collapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAACAAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAIA=</HashCode>
       <FileName>Contracts\Factories\IRecipeFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ImTheOneWhoCooks.Enums.UnitOfMeasurement" Collapsed="true">
-    <Position X="16.25" Y="0.5" Width="1.5" />
+    <Position X="16.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Enums\UnitOfMeasurement.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="ImTheOneWhoCooks.Enums.ProductType" Collapsed="true">
-    <Position X="16.25" Y="1.5" Width="1.5" />
+    <Position X="15" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAQACAAAAAAAQAAAAAAFAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\ProductType.cs</FileName>

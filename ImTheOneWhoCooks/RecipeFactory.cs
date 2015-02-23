@@ -24,7 +24,7 @@ namespace ImTheOneWhoCooks
 
         public IRecipe CreateBoiledRecipe(string name, int preparingTime)
         {
-            return new BakedRecipe(name, preparingTime);
+            return new BoiledRecipe(name, preparingTime);
         }
 
         public IRecipe CreateGrilledRecipe(string name, int preparingTime)

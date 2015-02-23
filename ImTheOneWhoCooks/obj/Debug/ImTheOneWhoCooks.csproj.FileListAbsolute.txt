@@ -1,5 +1,0 @@
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.csprojResolveAssemblyReference.cache
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.exe
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\bin\Debug\ImTheOneWhoCooks.pdb
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.exe
-D:\SoftUni\OOP\Exam-02.2015\ImTheOneWhoCooks\obj\Debug\ImTheOneWhoCooks.pdb

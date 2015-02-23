@@ -13,6 +13,6 @@ namespace ImTheOneWhoCooks
         public const string DuplicatedRecipe = "Recipe already exists";
 
         public const string SuccessAddProduct = "Adding product successfully";
-
+        public const string SuccessAddRecipe = "Adding recipe successfully";
     }
 }

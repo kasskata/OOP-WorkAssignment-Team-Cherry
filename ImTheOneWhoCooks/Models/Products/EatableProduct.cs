@@ -14,8 +14,8 @@ namespace ImTheOneWhoCooks.Models.Products
             this.Calories = calories;
         }
 
-        public EatableProduct(string name, double quantity, UnitOfMeasurement unitOfMeasurement, ProductType productType)
-            : this(name, 0, quantity, unitOfMeasurement, productType, 0)
+        public EatableProduct(string name, double quantity, UnitOfMeasurement unitOfMeasurement)
+            : this(name, 0, quantity, unitOfMeasurement, ProductType.Other, 0)
         {
         }
 

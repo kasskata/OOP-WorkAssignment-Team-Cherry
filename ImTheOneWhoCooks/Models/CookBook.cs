@@ -27,9 +27,10 @@ namespace ImTheOneWhoCooks.Models
             var cookbookRecipe = this.Recipes.FirstOrDefault(r => r.Name == recipe.Name);
             if (cookbookRecipe != null)
             {
-                throw new InvalidOperationException(Messages.);
+                throw new InvalidOperationException(Messages.DuplicatedRecipe);
             }
-            this.Recipes.Add();
+
+            this.Recipes.Add(recipe);
         }
         
     }

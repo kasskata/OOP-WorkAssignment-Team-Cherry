@@ -39,15 +39,15 @@ namespace ImTheOneWhoCooks
                     break;
                 }
 
-                try
-                {
+                //try
+                //{
                     var result = ExecuteCommand(command);
                     output.AppendLine(result);
-                }
-                catch (Exception e)
-                {
-                    output.AppendLine(e.Message);
-                }
+                //}
+                //catch (Exception e)
+                //{
+                //    output.AppendLine(e.Message);
+                //}
             }
         }
 
@@ -65,12 +65,16 @@ namespace ImTheOneWhoCooks
                     result = ParseAddCommand(argumentsAsString);
                     break;
                 case "List":
+
                     break;
                 case "Cook":
+
                     break;
                 case "Report":
+
                     break;
                 case "HowMuch":
+
                     break;
                 default:
                     throw new InvalidOperationException(Messages.InvalidCommand);
@@ -140,7 +144,7 @@ namespace ImTheOneWhoCooks
 
             for (int i = 0; i < productsCount; i++)
             {
-                var productArguments = productsAsString[i].Split(' ');
+                var productArguments = productsAsString[i].Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
                 var productName = productArguments[0];
                 var productQuantity = double.Parse(productArguments[1]);
                 var productUnitOfMeasurement = productArguments[2];
@@ -182,7 +186,7 @@ namespace ImTheOneWhoCooks
             }
 
 
-            return String.Join(", ", arguments);
+            return Messages.SuccessAddRecipe;
         }
 
 
@@ -243,24 +247,24 @@ namespace ImTheOneWhoCooks
 
         private ProductType ParseProductType(string type)
         {
-            switch (type)
+            switch (type.ToLower())
             {
-                case "Beans":
+                case "beans":
                     return ProductType.Beans;
-                case "Dairy":
+                case "dairy":
                     return ProductType.Dairy;
-                case "Meat":
+                case "meat":
                     return ProductType.Meat;
-                case "Other":
+                case "other":
                     return ProductType.Other;
-                case "Pasta":
+                case "pasta":
                     return ProductType.Pasta;
-                case "Plants":
+                case "plants":
                     return ProductType.Plants;
-                case "Spices":
+                case "spices":
                     return ProductType.Spices;
-                default : 
-                    throw  new NotImplementedException();
+                default :
+                    throw new InvalidOperationException(Messages.InvalidCommand);
              }
         }
     }

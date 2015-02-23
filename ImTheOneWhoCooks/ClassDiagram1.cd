@@ -19,7 +19,7 @@
   <Class Name="ImTheOneWhoCooks.Models.Recipes.Recipe">
     <Position X="4.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
       <FileName>Models\Recipes\Recipe.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -74,14 +74,14 @@
   <Class Name="ImTheOneWhoCooks.Engine">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAACAAAEAEAAAECAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AJAAgAAAAAAAACAAAEAEgAAECAQACAIBgAAAAAAAAAI=</HashCode>
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ImTheOneWhoCooks.Models.CookBook">
     <Position X="6.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\CookBook.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -89,7 +89,7 @@
   <Class Name="ImTheOneWhoCooks.Models.StoreHouse">
     <Position X="8.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
       <FileName>Models\StoreHouse.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -105,7 +105,7 @@
   <Class Name="ImTheOneWhoCooks.ProductFactory">
     <Position X="11" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>IAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ProductFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -155,7 +155,7 @@
   <Interface Name="ImTheOneWhoCooks.Contracts.ICookBook">
     <Position X="10.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contracts\ICookBook.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -163,7 +163,7 @@
     <Position X="10.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAACAAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAIA=</HashCode>
-      <FileName>Contracts\Factories\IRicipeFactory.cs</FileName>
+      <FileName>Contracts\Factories\IRecipeFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="ImTheOneWhoCooks.Enums.UnitOfMeasurement" Collapsed="true">

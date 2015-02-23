@@ -7,30 +7,29 @@ namespace ImTheOneWhoCooks
     public class RecipeFactory : IRecipeFactory
     {
 
-        //TODO Create recipe by type
-        public IRecipe CreateDrinkableRecipe(string name, decimal price)
+        public IRecipe CreateDrinkableRecipe(string name)
         {
-            return new DrinkableRecipe(name, price);
+            return new DrinkableRecipe(name);
         }
 
-        public IRecipe CreateRawRecipe(string name, decimal price, int preparingTime)
+        public IRecipe CreateRawRecipe(string name, int preparingTime)
         {
-            return new RawRecipe(name, price, preparingTime);
+            return new RawRecipe(name, preparingTime);
         }
 
-        public IRecipe CreateFriedRecipe(string name, decimal price, int preparingTime)
+        public IRecipe CreateFriedRecipe(string name, int preparingTime)
         {
-            return new FriedRecipe(name, price, preparingTime);
+            return new FriedRecipe(name, preparingTime);
         }
 
-        public IRecipe CreateBoiledRecipe(string name, decimal price, int preparingTime)
+        public IRecipe CreateBoiledRecipe(string name, int preparingTime)
         {
-            return new BakedRecipe(name, price, preparingTime);
+            return new BakedRecipe(name, preparingTime);
         }
 
-        public IRecipe CreateGrilledRecipe(string name, decimal price, int preparingTime)
+        public IRecipe CreateGrilledRecipe(string name, int preparingTime)
         {
-            return new GrilledRecipe(name, price, preparingTime);
+            return new GrilledRecipe(name, preparingTime);
         }
     }
 }

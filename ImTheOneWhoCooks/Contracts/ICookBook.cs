@@ -8,6 +8,9 @@ namespace ImTheOneWhoCooks.Contracts
 {
     public interface ICookBook
     {
-        IList<IRecipe> Recipes { get; set; } 
+        IList<IRecipe> Recipes { get;}
+        void AddRecipe(IRecipe recipe);
     }
+
+
 }

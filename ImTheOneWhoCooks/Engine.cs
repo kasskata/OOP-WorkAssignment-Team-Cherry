@@ -127,87 +127,96 @@ namespace ImTheOneWhoCooks
 
             const string pattern = @"(?<name>\w+);\s(?<type>\w+)(?:;\s(?<preparingTime>\d+))?;\sproducts:\s(?<products>.+)";
             var match = Regex.Match(argumentsAsString, pattern);
-            var arguments = match.Groups
-                .Cast<Group>()
-                .Select(m => m.Value)
-                .ToArray();
 
-            const int MaxArgumentsCount = 5;
+            List<String> arguments = new List<string>();
+            arguments.Add(match.Groups["name"].ToString());
+            arguments.Add(match.Groups["type"].ToString());
 
-            var name = arguments[1];
-            var type = arguments[2];
-            var preparingTimeInMinutes = int.Parse(arguments[MaxArgumentsCount - 1]);
-            var productsAsString = arguments[MaxArgumentsCount];
+            if (match.Groups["preparingTïme"].ToString() != "")
+            {
+                arguments.Add(match.Groups["preparingTime"].ToString());
+            }
 
-            var productsAndQuantityAsString = productsAsString.Split(',');
-            var productsCount = productsAndQuantityAsString.Length;
+            var productsAsString = match.Groups["products"].ToString().Split(',');
+            var productsCount = productsAsString.Length;
 
             var products = new List<IProduct>();
 
             for (int i = 0; i < productsCount; i++)
             {
-                var productArguments = productsAndQuantityAsString[i].Split(' ');
+                var productArguments = productsAsString[i].Split(' ');
                 var productName = productArguments[0];
                 var productQuantity = double.Parse(productArguments[1]);
                 var productUnitOfMeasurement = productArguments[2];
-                var product = productFactory.CreateEatableProductWithoutPriceAndCalories(productName, productQuantity,
-                    ParseUnitOfMeasurement(productUnitOfMeasurement), ParseProductType(type));
+                var product = productFactory.CreateEatableProduct(productName, productQuantity,
+                    ParseUnitOfMeasurement(productUnitOfMeasurement));
                 products.Add(product);
             }
 
-            return ExecuteAddRecipeCommand(arguments, products);
+            return ExecuteAddRecipeCommand(arguments.ToArray(), products);
         }
 
         private string ExecuteAddRecipeCommand(string[] arguments, IList<IProduct> products)
         {
+            IRecipe recipe;
+
+            var name = arguments[0];
+            var type = arguments[1];
+            var preparingTime = arguments.Length == 3 ? int.Parse(arguments[2]) : 0;
+
+            switch (type)
+            {
+                case "raw":
+                    recipe = recipeFactory.CreateRawRecipe(name, preparingTime);
+                    break;
+                case "fried":
+                    recipe = recipeFactory.CreateFriedRecipe(name, preparingTime);
+                    break;
+                case "boiled":
+                    recipe = recipeFactory.CreateBoiledRecipe(name, preparingTime);
+                    break;
+                case "grilled":
+                    recipe = recipeFactory.CreateRawRecipe(name, preparingTime);
+                    break;
+                case "drink":
+                    recipe = recipeFactory.CreateDrinkableRecipe(name);
+                    break;
+                default:
+                    throw new InvalidOperationException(Messages.InvalidCommand);
+            }
 
 
-            // TODO 
-            //var recipe = recipeFactory 
             return String.Join(", ", arguments);
         }
 
 
         private string ExecuteAddProductCommand(string[] arguments)
         {
-            var result = string.Empty;
+            var name = arguments[1];
+            var quantity = double.Parse(arguments[2]);
+            var unitOfMeasurementAsString = arguments[3];
+            var typeAsString = arguments[4];
+            var price = decimal.Parse(arguments[5]);
 
-            try
+            IProduct product;
+
+            UnitOfMeasurement units = ParseUnitOfMeasurement(unitOfMeasurementAsString);
+            ProductType type = ParseProductType(typeAsString);
+
+            const int MaxArgumentCount = 7;
+            if (arguments.Length == MaxArgumentCount)
             {
-                var name = arguments[1];
-                var quantity = double.Parse(arguments[2]);
-                var unitOfMeasurementAsString = arguments[3];
-                var typeAsString = arguments[4];
-                var price = decimal.Parse(arguments[5]);
-
-                IProduct product;
-
-                UnitOfMeasurement units;
-                Enum.TryParse(unitOfMeasurementAsString, out units);
-
-                ProductType type;
-                Enum.TryParse(typeAsString, out type);
-
-                const int MaxArgumentCount = 7;
-                if (arguments.Length == MaxArgumentCount)
-                {
-                    var calories = int.Parse(arguments[6]);
-                    product = productFactory.CreateEatableProduct(name, price, quantity, units, type, calories);
-                }
-                else
-                {
-                    product = productFactory.CreateProduct(name, price, quantity, units, type);
-                }
-
-                store.AddProduct(product);
-
-                return result = Messages.SuccessAddProduct;
+                var calories = int.Parse(arguments[6]);
+                product = productFactory.CreateEatableProduct(name, price, quantity, units, type, calories);
             }
-            catch (Exception)
+            else
             {
-                result = Messages.InvalidProductCommand;
-                return result;
+                product = productFactory.CreateProduct(name, price, quantity, units, type);
             }
+
+            store.AddProduct(product);
+
+            return Messages.SuccessAddProduct;
         }
 
         private void getEverythingAfterFirstWord(string input, out string firstWord, out string textAfterFirstWord)
@@ -231,7 +240,7 @@ namespace ImTheOneWhoCooks
                 case "pcs":
                     return UnitOfMeasurement.Pieces;
                 default:
-                    throw new NotImplementedException();
+                    throw new InvalidOperationException(Messages.InvalidCommand);
             }
 
         }

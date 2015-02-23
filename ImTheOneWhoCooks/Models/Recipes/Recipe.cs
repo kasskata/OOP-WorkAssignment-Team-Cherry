@@ -11,8 +11,8 @@ namespace ImTheOneWhoCooks.Models.Recipes
     {
         private readonly IList<IProduct> products;
 
-        protected Recipe(string name, decimal price) 
-            : base(name, price)
+        protected Recipe(string name) 
+            : base(name, 0)
         {
             this.products = new List<IProduct>();
         }
@@ -20,6 +20,14 @@ namespace ImTheOneWhoCooks.Models.Recipes
         public IList<IProduct> Products
         {
             get { return products; }
+        }
+
+        public override decimal Price
+        {
+            get
+            {
+                return 5;
+            }
         }
 
         public abstract string Cook();

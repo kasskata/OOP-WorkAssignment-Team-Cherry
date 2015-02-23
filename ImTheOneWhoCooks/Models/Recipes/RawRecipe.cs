@@ -10,8 +10,8 @@ namespace ImTheOneWhoCooks.Models.Recipes
     {
         private int preparingTime;
 
-        public RawRecipe(string name, decimal price, int preparingTime) 
-            : base(name, price)
+        public RawRecipe(string name, int preparingTime) 
+            : base(name)
         {
             this.PreparingTime = preparingTime;
         }

@@ -19,10 +19,9 @@ namespace ImTheOneWhoCooks
             return new EatableProduct(name, price, quantity, unitOfMeasurement, productType, calories);
         }
 
-        public IProduct CreateEatableProductWithoutPriceAndCalories(string name, double quantity, UnitOfMeasurement unitOfMeasurement,
-            ProductType productType)
+        public IProduct CreateEatableProduct(string name, double quantity, UnitOfMeasurement unitOfMeasurement)
         {
-            return new EatableProduct(name, quantity, unitOfMeasurement, productType);
+            return new EatableProduct(name, quantity, unitOfMeasurement);
         }
     }
 }

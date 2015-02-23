@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Factories\IProductFactory.cs" />
-    <Compile Include="Contracts\Factories\IRicipeFactory.cs" />
+    <Compile Include="Contracts\Factories\IRecipeFactory.cs" />
     <Compile Include="Messages.cs" />
     <Compile Include="Models\CookBook.cs" />
     <Compile Include="Engine.cs" />

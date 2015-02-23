@@ -7,8 +7,8 @@ namespace ImTheOneWhoCooks.Models.Recipes
 {
     public class BakedRecipe : RawRecipe
     {
-        public BakedRecipe(string name, decimal price, int preparingTime) 
-            : base(name, price, preparingTime)
+        public BakedRecipe(string name, int preparingTime) 
+            : base(name, preparingTime)
         {
         }
 

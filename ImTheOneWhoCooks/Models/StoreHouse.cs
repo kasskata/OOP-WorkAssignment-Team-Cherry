@@ -32,7 +32,7 @@ namespace ImTheOneWhoCooks.Models
             this.Products.Remove(product);
         }
 
-        public void IsDuplicate(IProduct product)
+        public void AddProduct(IProduct product)
         {
             var duplicate = this.Products.FirstOrDefault(r => r.Name == product.Name);
 

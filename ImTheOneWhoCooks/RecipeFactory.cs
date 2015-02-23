@@ -6,6 +6,8 @@ namespace ImTheOneWhoCooks
 {
     public class RecipeFactory : IRecipeFactory
     {
+
+        //TODO Create recipe by type
         public IRecipe CreateDrinkableRecipe(string name, decimal price)
         {
             return new DrinkableRecipe(name, price);

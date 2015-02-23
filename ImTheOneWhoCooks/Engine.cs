@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -41,8 +42,8 @@ namespace ImTheOneWhoCooks
 
                 //try
                 //{
-                    var result = ExecuteCommand(command);
-                    output.AppendLine(result);
+                var result = ExecuteCommand(command);
+                output.AppendLine(result);
                 //}
                 //catch (Exception e)
                 //{
@@ -65,16 +66,13 @@ namespace ImTheOneWhoCooks
                     result = ParseAddCommand(argumentsAsString);
                     break;
                 case "List":
-
+                    result = ExecuteListCommand(argumentsAsString);
                     break;
                 case "Cook":
-
                     break;
                 case "Report":
-
                     break;
                 case "HowMuch":
-
                     break;
                 default:
                     throw new InvalidOperationException(Messages.InvalidCommand);
@@ -83,10 +81,37 @@ namespace ImTheOneWhoCooks
             return result;
         }
 
+        private string ExecuteListCommand(string argumentsAsString)
+        {
+            var matches = Regex.Split(argumentsAsString, @"\W+");
+
+            var result = new StringBuilder();
+
+            if (matches.Length > 1)
+            {
+                switch (matches[1])
+                {
+                    case "type":
+                        ProductType type;
+                        Enum.TryParse(matches[2], out type);
+                        result.AppendLine(store.List(type));
+                        break;
+                    case "name":
+                        result.AppendLine(store.List(matches[2]));
+                        break;
+                }
+            }
+            else
+            {
+                result.AppendLine(store.List());
+            }
+            return result.ToString();
+        }
+
 
         private string ParseAddCommand(string commandLine)
         {
-            string result = "";
+            string result = string.Empty;
 
             string command;
             string argumentsAsString;
@@ -111,7 +136,7 @@ namespace ImTheOneWhoCooks
         {
             argumentsAsString = argumentsAsString.Trim('(', ')');
 
-            const string pattern = @"(\w+);\s(\d+(?:\.\d+)?)\s(\w+);\s(\w+);\s(\d+(?:\.\d+)?)";
+            const string pattern = @"(\w+);\s(\d+(?:\.\d+)?)\s(\w+);\s(\w+);\s(\d+(?:\.\d+)?)(?:;\s(\d+(?:\.\d+)?))?";
             var match = Regex.Match(argumentsAsString, pattern);
             var arguments = match.Groups
                 .Cast<Group>()
@@ -123,7 +148,7 @@ namespace ImTheOneWhoCooks
 
         private string ParseAddRecipeCommand(string argumentsAsString)
         {
-            argumentsAsString = argumentsAsString.Trim(new char[] { '(', ')' });
+            argumentsAsString = argumentsAsString.Trim('(', ')');
 
             const string pattern = @"(?<name>\w+);\s(?<type>\w+)(?:;\s(?<preparingTime>\d+))?;\sproducts:\s(?<products>.+)";
             var match = Regex.Match(argumentsAsString, pattern);
@@ -144,7 +169,7 @@ namespace ImTheOneWhoCooks
 
             for (int i = 0; i < productsCount; i++)
             {
-                var productArguments = productsAsString[i].Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
+                var productArguments = productsAsString[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var productName = productArguments[0];
                 var productQuantity = double.Parse(productArguments[1]);
                 var productUnitOfMeasurement = productArguments[2];
@@ -204,7 +229,7 @@ namespace ImTheOneWhoCooks
             ProductType type = ParseProductType(typeAsString);
 
             const int MaxArgumentCount = 7;
-            if (arguments.Length == MaxArgumentCount)
+            if (arguments[6] != string.Empty)
             {
                 var calories = int.Parse(arguments[6]);
                 product = productFactory.CreateEatableProduct(name, price, quantity, units, type, calories);
@@ -263,9 +288,9 @@ namespace ImTheOneWhoCooks
                     return ProductType.Plants;
                 case "spices":
                     return ProductType.Spices;
-                default :
+                default:
                     throw new InvalidOperationException(Messages.InvalidCommand);
-             }
+            }
         }
     }
 }

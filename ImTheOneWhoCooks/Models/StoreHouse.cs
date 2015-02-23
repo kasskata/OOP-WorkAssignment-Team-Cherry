@@ -53,7 +53,7 @@ namespace ImTheOneWhoCooks.Models
                 .ThenBy(p => p.Name)
                 .ToList();
 
-            var stringResult = string.Join("\n  ", sortedListProducts);
+            var stringResult = string.Join("\n", sortedListProducts);
 
             return stringResult;
         }
@@ -62,7 +62,7 @@ namespace ImTheOneWhoCooks.Models
         {
             var listByType = this.products.Where(p => p.ProductType == type).OrderBy(p => p.Name).ThenBy(p => p.Price);
 
-            var stringResult = string.Join("\n  ", listByType);
+            var stringResult = string.Join("\n", listByType);
 
             return stringResult;
         }
@@ -71,7 +71,7 @@ namespace ImTheOneWhoCooks.Models
         {
             var listByType = this.products.Where(p => p.Name == name.ToLower()).OrderBy(p => p.Name).ThenBy(p => p.Price);
 
-            var stringResult = string.Join("\n  ", listByType);
+            var stringResult = string.Join("\n", listByType);
 
             return stringResult;
         }
